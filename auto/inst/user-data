@@ -10,8 +10,8 @@ autoinstall:
   hostname: ubuntu-server
   password: "$6$E/MSHFHWgs$jJr9Ag5aIvPsLQY9BHQCkcCorFFWV/F.U2iBTAfVEW6Bki9CrXs2Kb2JPvRn.nOrC4qHVm4Hw9sRiTY8PjL6R0"
   username: user
- repo_update: none
- repo_upgrade: none
+ repo_update: false
+ repo_upgrade: false
  packages:
   - openssh-server
  network:
@@ -21,6 +21,8 @@ autoinstall:
     eth0:
      dhcp4: true
      dhcp6: false
+     optional: true
     eth1:
      dhcp4: true
      dhcp6: false
+     optional: true
