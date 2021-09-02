@@ -8,7 +8,6 @@ autoinstall:
         layout: "us"
     identity:
         hostname: ubuntu-server
-        # default password is "test"
         password: "$6$E/MSHFHWgs$jJr9Ag5aIvPsLQY9BHQCkcCorFFWV/F.U2iBTAfVEW6Bki9CrXs2Kb2JPvRn.nOrC4qHVm4Hw9sRiTY8PjL6R0"
         username: user
     repo_update: none
