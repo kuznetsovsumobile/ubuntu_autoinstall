@@ -1,26 +1,26 @@
 #cloud-config
 autoinstall:
-    version: 1
-    locale: "en_US.UTF-8"
-    refresh-installer:
-        update: true
-    keyboard:
-        layout: "us"
-    identity:
-        hostname: ubuntu-server
-        password: "$6$E/MSHFHWgs$jJr9Ag5aIvPsLQY9BHQCkcCorFFWV/F.U2iBTAfVEW6Bki9CrXs2Kb2JPvRn.nOrC4qHVm4Hw9sRiTY8PjL6R0"
-        username: user
-    repo_update: none
-    repo_upgrade: none
-    packages:
-        - openssh-server
-    network:
-        network:
-            version: 2
-            ethernets:
-                    eth0:
-                        dhcp4: true
-                        dhcp6: false
-                    eth1:
-                        dhcp4: true
-                        dhcp6: false
+ version: 1
+ locale: "en_US.UTF-8"
+ refresh-installer:
+  update: true
+ keyboard:
+  layout: "us"
+ identity:
+  hostname: ubuntu-server
+  password: "$6$E/MSHFHWgs$jJr9Ag5aIvPsLQY9BHQCkcCorFFWV/F.U2iBTAfVEW6Bki9CrXs2Kb2JPvRn.nOrC4qHVm4Hw9sRiTY8PjL6R0"
+  username: user
+ repo_update: none
+ repo_upgrade: none
+ packages:
+  - openssh-server
+ network:
+  network:
+   version: 2
+   ethernets:
+    eth0:
+     dhcp4: true
+     dhcp6: false
+    eth1:
+     dhcp4: true
+     dhcp6: false
